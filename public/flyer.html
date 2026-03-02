@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BakoX Exchange – Marketing Flyer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a14;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+
+    /* ── FLYER CARD ── */
+    .flyer {
+      width: 540px;
+      background: linear-gradient(160deg, #0f0f1e 0%, #0a1628 100%);
+      border: 1.5px solid rgba(251,191,36,0.35);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(251,191,36,0.12), 0 20px 60px rgba(0,0,0,0.6);
+    }
+
+    /* Top gold bar */
+    .top-bar {
+      background: linear-gradient(90deg, #fbbf24, #f59e0b, #d97706);
+      padding: 10px 20px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    .body {
+      padding: 36px 36px 32px;
+    }
+
+    /* Brand */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .brand-icon {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, #fbbf24, #d97706);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 900; color: #000;
+    }
+    .brand-name {
+      font-size: 22px; font-weight: 900;
+      color: #fff; letter-spacing: 2px; text-transform: uppercase;
+    }
+    .brand-tag {
+      font-size: 11px; color: #fbbf24; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+    }
+
+    /* Headline */
+    .headline {
+      font-size: 34px; font-weight: 900; color: #fff;
+      line-height: 1.15; margin-bottom: 8px;
+    }
+    .headline span {
+      background: linear-gradient(90deg, #fbbf24, #f59e0b);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .sub {
+      font-size: 14px; color: #9ca3af; margin-bottom: 28px; line-height: 1.5;
+    }
+
+    /* Big fee badge */
+    .fee-badge {
+      display: inline-flex;
+      align-items: center; gap: 14px;
+      background: linear-gradient(135deg, #fbbf24, #d97706);
+      border-radius: 18px;
+      padding: 16px 28px;
+      margin-bottom: 28px;
+    }
+    .fee-number {
+      font-size: 52px; font-weight: 900; color: #000; line-height: 1;
+    }
+    .fee-text { color: #000; }
+    .fee-text .big { font-size: 16px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+    .fee-text .small { font-size: 12px; font-weight: 600; opacity: 0.7; }
+
+    /* Features grid */
+    .features {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; margin-bottom: 28px;
+    }
+    .feat {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px; padding: 14px 16px;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .feat-icon { font-size: 22px; flex-shrink: 0; }
+    .feat-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .feat-desc { font-size: 11px; color: #6b7280; line-height: 1.4; }
+
+    /* Comparison strip */
+    .compare {
+      background: rgba(251,191,36,0.06);
+      border: 1px solid rgba(251,191,36,0.2);
+      border-radius: 14px; padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+    .compare-title {
+      font-size: 11px; font-weight: 700; color: #fbbf24;
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;
+    }
+    .compare-row {
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-size: 12px;
+    }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-label { color: #9ca3af; }
+    .compare-us { color: #4ade80; font-weight: 700; }
+    .compare-them { color: #f87171; }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      border-radius: 16px; padding: 18px 24px;
+      display: flex; align-items: center; gap: 14px;
+      text-decoration: none;
+    }
+    .cta-wa { font-size: 28px; }
+    .cta-text .line1 { font-size: 16px; font-weight: 900; color: #fff; }
+    .cta-text .line2 { font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 600; }
+    .cta-arrow { margin-left: auto; font-size: 22px; color: #fff; }
+
+    /* Footer strip */
+    .footer-strip {
+      background: rgba(0,0,0,0.4);
+      padding: 14px 36px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap; gap: 8px;
+    }
+    .footer-item { font-size: 11px; color: #6b7280; display: flex; align-items: center; gap: 5px; }
+    .footer-item span.dot { color: #fbbf24; font-size: 14px; }
+
+    /* ── SQUARE FLYER (for Instagram) ── */
+    .flyer-square {
+      width: 540px; height: 540px;
+      background: linear-gradient(160deg, #0f0f1e 0%, #0a1628 100%);
+      border: 1.5px solid rgba(251,191,36,0.35);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(251,191,36,0.12), 0 20px 60px rgba(0,0,0,0.6);
+      display: flex; flex-direction: column;
+    }
+    .sq-top {
+      background: linear-gradient(135deg, #fbbf24, #d97706);
+      padding: 18px 28px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .sq-brand { font-size: 20px; font-weight: 900; color: #000; letter-spacing: 2px; text-transform: uppercase; }
+    .sq-tag { font-size: 11px; color: rgba(0,0,0,0.6); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    .sq-body {
+      flex: 1; padding: 28px 28px 20px;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .sq-headline { font-size: 30px; font-weight: 900; color: #fff; line-height: 1.2; margin-bottom: 6px; }
+    .sq-headline span { color: #fbbf24; }
+    .sq-sub { font-size: 13px; color: #9ca3af; margin-bottom: 18px; }
+    .sq-fee {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, #fbbf24, #d97706);
+      border-radius: 14px; padding: 12px 20px; margin-bottom: 18px;
+      align-self: flex-start;
+    }
+    .sq-fee-num { font-size: 42px; font-weight: 900; color: #000; line-height: 1; }
+    .sq-fee-label { font-size: 13px; font-weight: 900; color: #000; text-transform: uppercase; }
+    .sq-pills {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px;
+    }
+    .pill {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 100px; padding: 6px 14px;
+      font-size: 12px; color: #d1d5db; font-weight: 600;
+    }
+    .sq-cta {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      border-radius: 14px; padding: 14px 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .sq-cta-text .t1 { font-size: 14px; font-weight: 900; color: #fff; }
+    .sq-cta-text .t2 { font-size: 12px; color: rgba(255,255,255,0.8); }
+
+    /* Labels */
+    .label {
+      color: #fbbf24; font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 12px; display: block;
+    }
+
+    /* Print hint */
+    .hint {
+      color: #4b5563; font-size: 13px; text-align: center;
+      max-width: 540px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       FLYER 1 — TALL (WhatsApp Status / Story)
+  ══════════════════════════════════════════ -->
+  <span class="label">📱 Flyer 1 — WhatsApp Status / Story (Tall)</span>
+
+  <div class="flyer">
+    <div class="top-bar">🔥 Only 2% Flat Fee &nbsp;·&nbsp; ⚡ Instant Naira Transfer &nbsp;·&nbsp; 🌍 Worldwide Service</div>
+
+    <div class="body">
+      <!-- Brand -->
+      <div class="brand">
+        <div class="brand-icon">₿</div>
+        <div>
+          <div class="brand-name">BakoX Exchange</div>
+          <div class="brand-tag">Trusted Crypto OTC Service</div>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline">Buy &amp; Sell Crypto<br /><span>Instantly. Worldwide.</span></div>
+      <p class="sub">Nigeria's most transparent crypto OTC service — trusted globally.<br />No surprises. No delays. Just results.</p>
+
+      <!-- Fee badge -->
+      <div class="fee-badge">
+        <div class="fee-number">2%</div>
+        <div class="fee-text">
+          <div class="big">Flat Fee Only</div>
+          <div class="small">Competitors charge 3–5%</div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="features">
+        <div class="feat">
+          <div class="feat-icon">⚡</div>
+          <div>
+            <div class="feat-title">Instant Transfer</div>
+            <div class="feat-desc">Naira hits your account immediately after confirmation</div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">🚫</div>
+          <div>
+            <div class="feat-title">Zero Hidden Fees</div>
+            <div class="feat-desc">Full breakdown shown before every transaction</div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">🏦</div>
+          <div>
+            <div class="feat-title">Large Volumes</div>
+            <div class="feat-desc">₦100K to ₦50M+ handled with ease</div>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">📲</div>
+          <div>
+            <div class="feat-title">24/7 Support</div>
+            <div class="feat-desc">Real human support via WhatsApp, always</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison -->
+      <div class="compare">
+        <div class="compare-title">💡 BakoX vs Others</div>
+        <div class="compare-row">
+          <span class="compare-label">Transaction Fee</span>
+          <span class="compare-us">BakoX: 2% ✅</span>
+          <span class="compare-them">Others: 3–5% ❌</span>
+        </div>
+        <div class="compare-row">
+          <span class="compare-label">Hidden Charges</span>
+          <span class="compare-us">None ✅</span>
+          <span class="compare-them">Common ❌</span>
+        </div>
+        <div class="compare-row">
+          <span class="compare-label">Payment Speed</span>
+          <span class="compare-us">Instant ✅</span>
+          <span class="compare-them">Delayed ❌</span>
+        </div>
+        <div class="compare-row">
+          <span class="compare-label">Large Volumes</span>
+          <span class="compare-us">Supported ✅</span>
+          <span class="compare-them">Limited ❌</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a class="cta" href="https://wa.me/2347036071563?text=Hello%20BakoX%20Exchange%2C%20I%20want%20to%20make%20a%20transaction">
+        <div class="cta-wa">💬</div>
+        <div class="cta-text">
+          <div class="line1">Chat on WhatsApp Now</div>
+          <div class="line2">+234 703 607 1563</div>
+        </div>
+        <div class="cta-arrow">→</div>
+      </a>
+    </div>
+
+    <div class="footer-strip">
+      <div class="footer-item"><span class="dot">₿</span> BakoX Exchange</div>
+      <div class="footer-item">🌍 Nigeria · USA · UK · Mexico &amp; more</div>
+      <div class="footer-item">🕐 Available 24/7</div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       FLYER 2 — SQUARE (Instagram / Facebook)
+  ══════════════════════════════════════════ -->
+  <span class="label">📸 Flyer 2 — Square (Instagram / Facebook Post)</span>
+
+  <div class="flyer-square">
+    <div class="sq-top">
+      <div style="font-size:28px;">₿</div>
+      <div>
+        <div class="sq-brand">BakoX Exchange</div>
+        <div class="sq-tag">Trusted Crypto OTC · Worldwide</div>
+      </div>
+    </div>
+
+    <div class="sq-body">
+      <div>
+        <div class="sq-headline">Buy &amp; Sell Crypto<br /><span>Instantly.</span></div>
+        <div class="sq-sub">Nigeria's most transparent OTC service — trusted globally.</div>
+
+        <div class="sq-fee">
+          <div class="sq-fee-num">2%</div>
+          <div>
+            <div class="sq-fee-label">Flat Fee Only</div>
+            <div style="font-size:10px;color:rgba(0,0,0,0.6);font-weight:600;">Others charge 3–5%</div>
+          </div>
+        </div>
+
+        <div class="sq-pills">
+          <div class="pill">⚡ Instant Naira Transfer</div>
+          <div class="pill">🚫 Zero Hidden Fees</div>
+          <div class="pill">🏦 Large Volumes OK</div>
+          <div class="pill">📲 24/7 Support</div>
+          <div class="pill">🌍 Worldwide</div>
+        </div>
+      </div>
+
+      <div class="sq-cta">
+        <div style="font-size:24px;">💬</div>
+        <div class="sq-cta-text">
+          <div class="t1">WhatsApp: +234 703 607 1563</div>
+          <div class="t2">Message us to start trading now →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       COPY-PASTE CAPTION
+  ══════════════════════════════════════════ -->
+  <span class="label">📝 Copy-Paste Caption for Posts</span>
+
+  <div style="width:540px; background:#111827; border:1px solid #374151; border-radius:16px; padding:24px;">
+    <p style="color:#fbbf24; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px;">Caption (copy this text)</p>
+    <pre style="color:#d1d5db; font-size:13px; line-height:1.8; white-space:pre-wrap; font-family:'Inter',sans-serif;">💰 Selling or buying crypto? Stop overpaying!
+
+₿ BakoX Exchange gives you:
+✅ Only 2% flat fee (others charge 3–5%)
+⚡ Instant Naira transfer to your bank
+🚫 Zero hidden charges — full transparency
+🏦 Handles ₦100K to ₦50M+ transactions
+🌍 Serving Nigeria, USA, UK, Mexico &amp; more
+📲 24/7 WhatsApp support
+
+💡 Example: On a ₦1,000,000 transaction,
+you save ₦10,000–₦30,000 vs competitors!
+
+👇 Start trading now:
+📲 wa.me/2347036071563
+
+#BakoXExchange #CryptoNigeria #USDT #Bitcoin
+#CryptoOTC #BuyUSDT #SellUSDT #NairaTransfer</pre>
+  </div>
+
+  <p class="hint">💡 Tip: Take a screenshot of each flyer above and share it on WhatsApp Status, Instagram, Facebook, or Twitter/X along with the caption.</p>
+
+</body>
+</html>
