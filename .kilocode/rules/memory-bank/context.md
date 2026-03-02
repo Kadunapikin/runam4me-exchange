@@ -86,3 +86,4 @@ export async function GET() {
 |------|---------|
 | Initial | Template created with base setup |
 | 2026-03-02 | Built RunAm4me Exchange full marketing landing page — dark gold theme, animated ticker, hero with 2% fee badge, comparison table, 5-step process, pricing example, target market section, WhatsApp CTA (+2347036071563) |
+| 2026-03-02 | Rebranded to BakoX Exchange; updated all name references, ticker, comparison table, feature cards, footer; changed "Serving Abuja & Kaduna" to "Serving Worldwide" (Nigeria, USA, UK, Mexico & more) |
