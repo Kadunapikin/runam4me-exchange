@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RunAm4me Exchange | Crypto OTC Service Nigeria",
+  title: "BakoX Exchange | Crypto OTC Service Worldwide",
   description:
-    "Buy and sell cryptocurrency instantly with a transparent 2% fixed fee. Instant Naira transfer. Trusted crypto OTC service in Abuja & Kaduna.",
-  keywords: "crypto OTC Nigeria, buy USDT Nigeria, sell crypto Naira, RunAm4me Exchange",
+    "Buy and sell cryptocurrency instantly with a transparent 2% fixed fee. Instant Naira transfer. Trusted crypto OTC service serving clients worldwide.",
+  keywords: "crypto OTC Nigeria, buy USDT Nigeria, sell crypto Naira, BakoX Exchange, crypto worldwide",
   openGraph: {
-    title: "RunAm4me Exchange | Only 2% Fee",
-    description: "Nigeria's most transparent crypto OTC service. Flat 2% fee. Instant Naira transfer.",
+    title: "BakoX Exchange | Only 2% Fee",
+    description: "Trusted crypto OTC service serving clients worldwide. Flat 2% fee. Instant Naira transfer.",
     type: "website",
   },
 };

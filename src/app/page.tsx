@@ -1,6 +1,6 @@
 export default function Home() {
   const whatsappNumber = "+2347036071563";
-  const whatsappLink = `https://wa.me/2347036071563?text=Hello%20RunAm4me%20Exchange%2C%20I%20want%20to%20make%20a%20transaction`;
+  const whatsappLink = `https://wa.me/2347036071563?text=Hello%20BakoX%20Exchange%2C%20I%20want%20to%20make%20a%20transaction`;
 
   return (
     <main className="min-h-screen" style={{ background: "linear-gradient(135deg, #0a0a14 0%, #0f0f1e 40%, #0a1628 100%)" }}>
@@ -13,13 +13,13 @@ export default function Home() {
               <span>🔥 ONLY 2% FLAT FEE</span>
               <span>⚡ INSTANT NAIRA TRANSFER</span>
               <span>💎 TRUSTED OTC SERVICE</span>
-              <span>🇳🇬 SERVING ABUJA & KADUNA</span>
+              <span>🌍 SERVING WORLDWIDE</span>
               <span>📲 WHATSAPP: {whatsappNumber}</span>
               <span>✅ ZERO HIDDEN FEES</span>
               <span>🔥 ONLY 2% FLAT FEE</span>
               <span>⚡ INSTANT NAIRA TRANSFER</span>
               <span>💎 TRUSTED OTC SERVICE</span>
-              <span>🇳🇬 SERVING ABUJA & KADUNA</span>
+              <span>🌍 SERVING WORLDWIDE</span>
               <span>📲 WHATSAPP: {whatsappNumber}</span>
               <span>✅ ZERO HIDDEN FEES</span>
             </span>
@@ -39,18 +39,18 @@ export default function Home() {
         <div className="inline-flex items-center gap-3 mb-6 px-5 py-2 rounded-full border border-yellow-500/30"
           style={{ background: "rgba(251,191,36,0.08)" }}>
           <span className="text-2xl">₿</span>
-          <span className="text-yellow-400 font-bold tracking-widest text-sm uppercase">RunAm4me Exchange</span>
+          <span className="text-yellow-400 font-bold tracking-widest text-sm uppercase">BakoX Exchange</span>
         </div>
 
         {/* Main headline */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight mb-4">
           Buy & Sell Crypto
           <br />
-          <span className="animate-shimmer">Instantly in Nigeria</span>
+          <span className="animate-shimmer">Instantly. Worldwide.</span>
         </h1>
 
         <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto mb-8">
-          Nigeria&apos;s most transparent crypto OTC service.
+          Nigeria&apos;s most transparent crypto OTC service — trusted globally.
           <br className="hidden sm:block" />
           No surprises. No delays. Just results.
         </p>
@@ -128,7 +128,7 @@ export default function Home() {
                 <div className="text-gray-400 text-sm font-medium">Feature</div>
               </div>
               <div className="p-4 border-b border-white/10" style={{ background: "rgba(251,191,36,0.1)" }}>
-                <div className="text-yellow-400 font-bold text-sm">RunAm4me ✅</div>
+                <div className="text-yellow-400 font-bold text-sm">BakoX ✅</div>
               </div>
               <div className="p-4 border-b border-white/10">
                 <div className="text-gray-500 text-sm">Others ❌</div>
@@ -180,9 +180,9 @@ export default function Home() {
                 desc: "Whether it's ₦100K or ₦50M, we handle it. Built for serious traders and businesses.",
               },
               {
-                icon: "🇳🇬",
-                title: "Nigeria-First",
-                desc: "Built for Nigerians. Serving Abuja, Kaduna, and beyond. We understand your market.",
+                icon: "🌍",
+                title: "Worldwide Service",
+                desc: "From Nigeria to Mexico, USA, UK and beyond — BakoX serves clients across the globe. No borders.",
               },
             ].map((card, i) => (
               <div key={i} className="glass-card rounded-2xl p-6 hover:border-yellow-500/30 transition-all duration-300 hover:-translate-y-1">
@@ -297,7 +297,7 @@ export default function Home() {
               <p className="text-gray-500 text-sm">
                 Compare: Competitors charge 3–5% = ₦30,000–₦50,000 on the same transaction
               </p>
-              <p className="text-green-400 font-bold mt-1">You save ₦10,000–₦30,000 with RunAm4me! 🎉</p>
+              <p className="text-green-400 font-bold mt-1">You save ₦10,000–₦30,000 with BakoX Exchange! 🎉</p>
             </div>
           </div>
         </div>
@@ -329,7 +329,7 @@ export default function Home() {
           <div className="mt-6 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/30"
               style={{ background: "rgba(251,191,36,0.08)" }}>
-              <span className="text-yellow-400 text-sm font-bold">📍 Currently serving: Abuja & Kaduna</span>
+              <span className="text-yellow-400 text-sm font-bold">🌍 Serving clients worldwide — Nigeria, USA, UK, Mexico & more</span>
             </div>
           </div>
         </div>
@@ -346,7 +346,7 @@ export default function Home() {
               Ready to Trade?
             </h2>
             <p className="text-gray-400 mb-2">
-              Join hundreds of traders who trust RunAm4me Exchange
+              Join traders worldwide who trust BakoX Exchange
             </p>
             <p className="text-yellow-400 font-bold text-lg mb-8">
               Only 2% fee. Instant transfer. Zero stress.
@@ -381,13 +381,13 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
             <span className="text-yellow-400 text-xl">₿</span>
-            <span className="text-white font-black text-lg tracking-widest">RUNAM4ME EXCHANGE</span>
+            <span className="text-white font-black text-lg tracking-widest">BAKOX EXCHANGE</span>
           </div>
           <p className="text-gray-600 text-sm">
-            Nigeria&apos;s most transparent crypto OTC service · 2% flat fee · Instant Naira transfer
+            Trusted crypto OTC service · 2% flat fee · Instant Naira transfer · Worldwide
           </p>
           <p className="text-gray-700 text-xs mt-2">
-            © 2025 RunAm4me Exchange · Abuja & Kaduna, Nigeria
+            © 2025 BakoX Exchange · Nigeria & Worldwide
           </p>
         </div>
       </footer>
