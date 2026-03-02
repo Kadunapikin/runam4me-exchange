@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "RunAm4me Exchange | Crypto OTC Service Nigeria",
+  description:
+    "Buy and sell cryptocurrency instantly with a transparent 2% fixed fee. Instant Naira transfer. Trusted crypto OTC service in Abuja & Kaduna.",
+  keywords: "crypto OTC Nigeria, buy USDT Nigeria, sell crypto Naira, RunAm4me Exchange",
+  openGraph: {
+    title: "RunAm4me Exchange | Only 2% Fee",
+    description: "Nigeria's most transparent crypto OTC service. Flat 2% fee. Instant Naira transfer.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
