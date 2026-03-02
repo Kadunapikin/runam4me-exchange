@@ -85,3 +85,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-03-02 | Built RunAm4me Exchange full marketing landing page — dark gold theme, animated ticker, hero with 2% fee badge, comparison table, 5-step process, pricing example, target market section, WhatsApp CTA (+2347036071563) |
